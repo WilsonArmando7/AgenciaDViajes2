@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page de Viajes en Guatemala</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="java.js">
+</head>
+<body>
+  <header>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+   
+                <!-- aqui empieza el logotipo-->
+                <video autoplay loop muted playsinline id="logo">
+                  <source src="imagenes/logotipo/Sin título-1.mp4" type="video/mp4">
+                  
+                </video>
+                   
+    <h1 id="Viajes">Viajes Aventura Guatemala</h1>
+    <p id="ViajesParrafo">¡Descubre la belleza de Guatemala!</p>
+    
+  </header>
+  
+  
+  <main>
+    <div class="row"> 
+      <section class="packages col-md-6">
+        <h2>Paquetes de Viaje 1</h2>
+        <div class="package-card">
+          <img src="imagenes/guatemala-departamento-de-quetzaltenango-quetzaltenango.jpg" alt="Paquete 1">
+          <h3>Paquete 1</h3>
+          <p>Quetzaltenango (Xela)</p>
+          <button onclick="mostrarDetalles('detalles1')">Ver Detalles</button>
+         
+         
+          <button class="btn-ver-mas" data-target="informacion1">Ver más</button>
+          <div class="informacion-adicional" id="informacion1" style="display: none;">
+            <!-- Aquí va tu segunda información adicional -->
+            <p>Se fundó Quetzaltenango en 1825, habiendo sido Quezaltenango/Soconusco uno de los departamentos originales del Estado de Guatemala. El área de Quetzaltenango era parte de la región donde se formó el efímero Estado de Los Altos. Se creó el Departamento de Quetzaltenango oficialmente el 16 de septiembre de 1845.</p>
+            <button class="btn-cerrar-informacion" data-target="informacion1">Cerrar información</button>
+          </div>
+         
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function() {
+              // Mostrar información adicional al hacer clic en "Ver más"
+              $(".btn-ver-mas").click(function() {
+                var target = $(this).data("target"); // Obtenemos el valor del atributo data-target del botón clickeado
+                $("#" + target).slideDown(); // Seleccionamos el contenedor de la información adicional y lo mostramos con slideDown()
+              });
+          
+              // Ocultar información adicional al hacer clic en "Cerrar información"
+              $(".btn-cerrar-informacion").click(function() {
+                var target = $(this).data("target"); // Obtenemos el valor del atributo data-target del botón clickeado
+                $("#" + target).slideUp(); // Seleccionamos el contenedor de la información adicional y lo ocultamos con slideUp()
+              });
+            });
+          </script>
+
+
+          </div>
+          <div id="detalles1" class="detalles" style="display: none;">
+            <!-- Contenido de los detalles aquí -->
+            <p>Estos son los detalles del Paquete 1.</p>
+            <div class="contenedor-imagen">
+              <img src="imagenes/Parque.jpg" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">fotografia del parke central</div>
+            </div>
+            <div class="contenedor-imagen">
+              <img src="imagenes/XELA.jpg" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">zoologico </div>
+            </div>
+            <div class="contenedor-imagen">
+              <img src="imagenes/Teatr0.jpg" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">TEATRO MUNICIPAL</div>
+            </div>
+            <div class="contenedor-imagen">
+              <img src="imagenes/panorama.jpg" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">VOLCAN SANTAMARIA </div>
+            </div>
+            <button onclick="cerrarDetalles('detalles1')">Cerrar Detalles</button>
+          </div>
+          
+          
+
+         
+      </section>
+   <!--  222222222222222222222222222222222222222222222222222222222 -->
+      <section class="packages col-md-6">
+        <h2>Paquete de Viaje 2</h2>
+        <div class="package-card">
+          <img src="imagenes/amatitlan/imag2.webp" alt="Paquete 2">
+          <h3>Paquete 2</h3>
+          <p>Aguas termales de Amatitlán..</p>
+          <button onclick="mostrarDetalles('detalles2')">Ver Detalles</button>
+         
+          <button class="btn-ver-mas" data-target="informacion2">Ver más</button>
+          <div class="informacion-adicional" id="informacion2" style="display: none;">
+            <!-- Aquí va tu segunda información adicional -->
+            <p>El lago de Amatitlán es de gran importancia porque es la reserva principal de agua cercana a la ciudad capital. Presenta un área superficial de 15 kilómetros cuadrados y una profundidad media de 18 metros.</p>
+            <button class="btn-cerrar-informacion" data-target="informacion2">Cerrar información</button>
+          </div>
+         
+
+
+
+
+
+          </div>
+          <div id="detalles2" class="detalles" style="display: none;">
+            <!-- Contenido de los detalles aquí -->
+            <p>Estos son los detalles del Paquete 2.</p>
+            <div class="contenedor-imagen">
+              <img src="imagenes/amatitlan/imag2.webp" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">Descripción imagen 1</div>
+            </div>
+            <div class="contenedor-imagen">
+              <img src="imagenes/amatitlan/imagen3.jpg" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">Descripción imagen 2</div>
+            </div>
+            <div class="contenedor-imagen">
+              <img src="imagenes/amatitlan/imagen5.jpg" alt="">
+              <div class="texto-encima"></div>
+              <div class="centrado">Descripción imagen 2</div>
+            </div>
+            <!-- Agrega más imágenes si es necesario -->
+            <button onclick="cerrarDetalles('detalles2')">Cerrar Detalles</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    
+
+ <!-- 3333333333333333333333333333333333333333333333333333 -->
+ <div class="row"> 
+ <section class="packages col-md-6">
+  <h2>Paquete de Viaje 3</h2>
+  <div class="package-card">
+    <img src="imagenes/tikal/ima1.jpg" alt="Paquete 3">
+    <h3>Paquete 3</h3>
+    <p>parke tikal 3.</p>
+    <button onclick="mostrarDetalles('detalles3')">Ver Detalles</button>
+
+    <button class="btn-ver-mas" data-target="informacion3">Ver más</button>
+    <div class="informacion-adicional" id="informacion3" style="display: none;">
+      <!-- Aquí va tu segunda información adicional -->
+      <p>El Parque Nacional Tikal fue creado el 26 de Mayo de 1955 bajo la responsabilidad del Instituto de Antropología e Historia, y se constituye como la primera área protegida de Guatemala, reconocida por UNESCO como Sitio de Patrimonio Mundial en 1979..</p>
+      <button class="btn-cerrar-informacion" data-target="informacion3">Cerrar información</button>
+    </div>
+   
+
+    <div id="detalles3" class="detalles" style="display: none;">
+      <!-- Contenido de los detalles aquí -->
+      <p>Estos son los detalles del Paquete 3.</p>
+      <div class="contenedor-imagen">
+        <img src="imagenes/tikal/ima2.jpg" alt="">
+        <div class="texto-encima"></div>
+        <div class="centrado">Descripción imagen 1</div>
+      </div>
+      <div class="contenedor-imagen">
+        <img src="imagenes/tikal/ima3.jpg" alt="">
+        <div class="texto-encima"></div>
+        <div class="centrado">Descripción imagen 2</div>
+      </div>
+      <div class="contenedor-imagen">
+        <img src="imagenes/tikal/ima4.jpg" alt="">
+        <div class="texto-encima"></div>
+        <div class="centrado">Descripción imagen 3</div>
+      </div>
+      <!-- Agrega más imágenes si es necesario -->
+      <button onclick="cerrarDetalles('detalles3')">Cerrar Detalles</button>
+    </div>
+  </div>
+</section>
+ <!-- 4444444444444444444444444444444444444444444444444444444444 -->
+ <section class="packages col-md-6">
+  <h2>Paquete de Viaje 4</h2>
+  <div class="package-card">
+    <img src="imagenes/irtra/fondo.png" alt="Paquete 4">
+    <h3>Paquete 4</h3>
+    <p>El IRTRA.</p>
+    <button>Q90</button>
+    <button onclick="mostrarDetalles('detalles4')">Ver Detalles</button>
+
+
+    <button class="btn-ver-mas" data-target="informacion4">Ver más</button>
+    <div class="informacion-adicional" id="informacion4" style="display: none;">
+      <!-- Aquí va tu segunda información adicional -->
+      <p>El IRTRA fue creado por el decreto 1528 del Congreso de la República de Guatemala en 1962. Tiene el objetivo de brindar un servicio de excelencia a la comunidad, especialmente a los trabajadores de la empresa privada y sus familias, así como contribuir al turismo interno y extranjero.
+      </p>
+      <button class="btn-cerrar-informacion" data-target="informacion4">Cerrar información</button>
+    </div>
+   
+
+
+
+
+    <div id="detalles4" class="detalles" style="display: none;">
+      <!-- Contenido de los detalles aquí -->
+      <p>Estos son los detalles del Paquete 4.</p>
+      <div class="contenedor-imagen">
+        <img src="imagenes/irtra/ima2.jpg" alt="">
+        <div class="texto-encima"></div>
+        <div class="centrado">Descripción imagen 1</div>
+      </div>
+      <div class="contenedor-imagen">
+        <img src="imagenes/irtra/ima3.jpg" alt="">
+        <div class="texto-encima"></div>
+        <div class="centrado">Descripción imagen 2</div>
+      </div>
+      <div class="contenedor-imagen">
+        <img src="imagenes/irtra/ima4.jpg" alt="">
+        <div class="texto-encima"></div>
+        <div class="centrado">Descripción imagen 3</div>
+      </div>
+      <!-- Agrega más imágenes si es necesario -->
+      <button onclick="cerrarDetalles('detalles4')">Cerrar Detalles</button>
+    </div>
+  </div>
+</section>
+</div>
+
+  </main>
+  
+  <script>
+    function mostrarDetalles(id) {
+      var detalles = document.getElementById(id);
+      detalles.style.display = 'block';
+    }
+  
+    function cerrarDetalles(id) {
+      var detalles = document.getElementById(id);
+      detalles.style.display = 'none';
+    }
+
+   
+  </script>
+
+
+        
+            
+          
+            
+   
+
+<!--  00000000000000000000000000 -->
+
+
+
+<!-- AQUI EMPIEZA LAS PROMOCIONES  -->
+
+
+    
+  <header class="container mt-5 mb-4 text-center">
+    <h1>Promociones Turísticas</h1>
+    <p>¡Descubre nuestras increíbles ofertas para los mejores destinos turísticos!</p>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <!-- Parque Central -->
+      <section class="col-md-6">
+        <div class="card mb-4">
+          <img src="imagenes/promocion/c92d7c46-20fb-4aa8-a08b-51bedc678712.jpg" class="card-img-top" alt="Parque Central">
+          <div class="card-body">
+            <h5 class="card-title">Quetzaltenango</h5>
+            <p class="card-text">¡Disfruta de la belleza y cultura del Parque Central!</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <button>Q 100.00</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Amatitlán -->
+      <section class="col-md-6">
+        <div class="card mb-4">
+          <img src="imagenes/promocion/termales.png" class="card-img-top" alt="Amatitlán">
+          <div class="card-body">
+            <h5 class="card-title">Amatitlán</h5>
+            <p class="card-text">¡Relájate en las aguas termales de Amatitlán!</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <button> Q 300.00</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <!-- IRTRA -->
+      <section class="col-md-6">
+        <div class="card mb-4">
+          <img src="imagenes/promocion/irtra-4-XOCOMIL.webp" class="card-img-top" alt="IRTRA">
+          <div class="card-body">
+            <h5 class="card-title">IRTRA</h5>
+            <p class="card-text">¡Diviértete en el parque de diversiones IRTRA!</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <button type="button" class="btn btn-primary">Q 200</button>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Tikal -->
+      <section class="col-md-6">
+        <div class="card mb-4">
+          <img src="imagenes/promocion/tikal-3.jpg" class="card-img-top" alt="Tikal">
+          <div class="card-body">
+            <h5 class="card-title">Tikal</h5>
+            <p class="card-text">¡Explora las antiguas ruinas de Tikal!</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <button type="button" class="btn btn-primary">Q 200</button>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+    <!-- aquiiiempieza los testimonios tttttttttttttttttttttttttttttttttttttttttttttttttttttttt) -->
+    
+
+    <div class="container">
+      <h2 class="text-center mt-5 mb-4">Testimonios de Clientes</h2>
+      <div class="row">
+        <!-- Testimonio 1 -->
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="imagenes/testimonios/fun3.jpg" alt="Imagen Estudiante 1" class="float-left">
+            <div>
+              <h4>Wilson Armando Vicente</h4>
+              <p>¡Increíble experiencia! El viaje fue muy educativo y divertido. Aprendí mucho y conocí a personas maravillosas. ¡Gracias!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="imagenes/testimonios/fun.jpg" alt="Imagen Estudiante 2" class="float-left">
+
+            <div>
+              <h4>Gualter Estuardo  2</h4>
+              <p>Este viaje superó todas mis expectativas. Los destinos fueron impresionantes y los guías fueron muy informativos. ¡Definitivamente lo recomendaría!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonio 3 -->
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="imagenes/testimonios/fun2.jpg" alt="Imagen Estudiante 3" class="float-left">
+            <div>
+              <h4>Nombre del Estudiante</h4>
+              <p>¡Una aventura inolvidable! Conocí lugares que solo había visto en fotos. Gracias al equipo por hacerlo posible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- aqui termina los testimonios  tttttttttttttttttttttttttttttttttttttttttttttttttttttttt) -->
+ 
+ 
+ 
+  <!--  AQUI EMPIEZA EL FORMULARIO -->
+<div class="container">
+  <h2 class="text-center mt-5 mb-4">Formulario para que te contactes con nosotros</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form action="#" method="post" id="contactForm">
+        <div class="form-group">
+          <label for="name" class="for1">Nombre:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="for1">Correo Electrónico:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message" class="for1">Mensaje:</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Espera a que el DOM esté completamente cargado
+  document.addEventListener("DOMContentLoaded", function() {
+    // Agrega el event listener al formulario
+    document.getElementById("contactForm").addEventListener("submit", function(event){
+      event.preventDefault(); // Evita que se envíe el formulario por defecto
+
+      // Aquí puedes agregar tu lógica para enviar los datos del formulario, por ejemplo, a través de AJAX
+      
+      // Mostrar alerta de éxito
+      alert("¡Mensaje enviado con éxito!");
+      
+      // Aquí puedes redirigir a una página de agradecimiento u otra acción deseada
+    });
+  });
+</script>
+
+
+  
+  <!--  AQUI EMPIEZA el fooooterrrrrrrrrrrrrrrrrrrrr -->
+
+
+
+  <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h4 class="mb-4">Detalles de Contacto</h4>
+                <p><i class="fas fa-map-marker-alt mr-2"></i>Quetzaltenango zona 5</p>
+                <p><i class="fas fa-map-marker-alt mr-2"></i>Quetzaltenango zona 5</p>
+                <p><i class="fas fa-phone-alt mr-2"></i>+502 36143299</p>
+                <p><i class="fas fa-envelope mr-2"></i>MochileoFeliz@.com</p>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h4 class="mb-4">Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#" class="text-light mr-3"><i class="fab fa-facebook-f">MochileoFeliz</i></a>
+
+                    <a href="#" class="text-light mr-3"><i class="fab fa-twitter">MochF</i></a>
+                    <a href="#" class="text-light mr-3"><i class="fab fa-instagram">Mochilero2</i></a>
+                    
+                  </div>
+            </div>
+            <div class="col-lg-4">
+                <h4 class="mb-4">Ubicación</h4>
+                <p>Insertar mapa aquí (opcional)</p>
+                <!-- Aquí puedes insertar tu mapa utilizando una herramienta como Google Maps -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer class="container mt-5 mb-4 text-center">
+    <p>&copy; 2024 Promociones Turísticas</p>
+  </footer>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2024 Viajes Aventura Guatemala</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
+

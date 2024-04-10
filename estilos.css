@@ -1,0 +1,224 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #15202b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+/* Estilos para el título h1 con el id "Viajes" */
+#Viajes {
+    color: #f5d547; /* Cambia el color del texto a rojo */
+  }
+  
+  /* Estilos para el párrafo p con el id "ViajesParrafo" */
+  #ViajesParrafo {
+    color: #f5d547; /* Cambia el color del texto a verde */
+  }
+  
+
+  #logo {
+  width:4;
+  }
+
+  main {
+    padding: 20px;
+  }
+  
+  /* Estilos para las secciones */
+  .packages, .promotions {
+    margin-bottom: 40px;
+  }
+  
+  /* Estilos para las tarjetas de paquetes y promociones */
+  .package-card, .promotion-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .package-card img, .promotion-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #15292b;
+  }
+  
+  .packages {
+    
+    background-color: #f5d547; /* Cambia el color de fondo */
+    padding: 5%; /* Añade relleno */
+    border-radius: 3%; /* Añade esquinas redondeadas */
+    width: 400; /* Cambia el ancho de la sección */
+    flex: 1; /* Hace que las secciones tengan igual ancho */
+
+  }
+
+ 
+  /* Estilos para el título h2 */
+h2 {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #15202b;
+    transition: background 0.3s ease, padding 0.3s ease, border 0.3s ease;
+  }
+  
+
+  .contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+
+  .texto-encima {
+    position: absolute;
+    top: 2%; /* Cambiando a porcentaje para adaptarse a la imagen */
+    left: 2%; /* Cambiando a porcentaje para adaptarse a la imagen */
+    font-weight: bold;
+    margin: 2%;
+   
+    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.8); /* Añadiendo transparencia al fondo */
+    padding: 0px; /* Añadiendo espacio alrededor del texto */
+  }
+  
+
+
+  .texto-encima:hover {
+    transform: scale(1.1); /* Aumentar la escala del texto en un 10% cuando el mouse está sobre él */
+  }
+
+  
+  .centrado {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F5D547;
+  }
+  
+
+  
+  .border-shadow {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5;
+  }
+  
+
+  .testimonial {
+    margin-bottom: 30px;
+  }
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .testimonial img:hover {
+    transform: rotate(90deg);
+  }
+
+  .testimonial .testimonial-content {
+    border: 1px solid rgb(221, 12, 12);
+    
+  }
+
+
+  .text-center {
+    background: #F5D547;
+  
+  }
+
+ 
+  .col-md-4 {
+    
+    color: #15202b;
+  }
+
+  .form-group label {
+    background: #F5D547;
+    pad: 5px;
+    margin: auto;
+    border-radius: 10px;
+
+  }
+
+
+      /* estilos de fooooterrrrrrrrrrrrrr */
+
+
+
+  /* Estilos adicionales */
+  .footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer p {
+    margin-bottom: 0;
+  }
+  .social-icons {
+    font-size: 24px;
+    margin-top: 10px;
+    background: #F5D547;
+  }
+  .social-icons a {
+    color: #6f5e5e;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  .map-container {
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  
+  .col-lg-4  {
+    color: #ffffff;
+  }
+
+  #informacion-adicional {
+    display: none; /* Por defecto, ocultar la información adicional */
+  }
+
+  /* aqui empiesa el css del boton ver mas io */
+
+
+  .card-text {
+
+    background: #F5D547;
+    border-radius: 7px;
+  }
+
+  .container {
+    color: #007bff;
+  }
+
+ 
